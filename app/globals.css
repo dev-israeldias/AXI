@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-display), ui-sans-serif, system-ui;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui;
+}
+
+html { scroll-behavior: smooth; background: #0a0f1a; color: #e9eef7; }
+body { font-family: var(--font-body), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+/* Grade de arquitetura: linhas finas que somem em direção ao conteúdo */
+.axis-grid {
+  background-image:
+    linear-gradient(to right, rgba(143,179,255,.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(143,179,255,.07) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.axis-grid > * { position: relative; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
