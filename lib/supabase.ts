@@ -13,9 +13,9 @@ export async function authClient() {
   return createServerClient(url, key, {
     cookies: {
       getAll: () => store.getAll(),
-      setAll: (list) => {
-        try { list.forEach(({ name, value, options }) => store.set(name, value, options)); } catch {}
-      },
+      setAll: (list: { name: string; value: string; options?: any }[]) => {
+  try { list.forEach(({ name, value, options }) => store.set(name, value, options)); } catch {}
+},
     },
   });
 }
