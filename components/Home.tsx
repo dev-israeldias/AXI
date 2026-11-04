@@ -18,7 +18,6 @@ export default function Home({ c, edit }: { c: Record<string, string>; edit: boo
 
       <header className={`absolute inset-x-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6 ${edit ? "top-9" : "top-0"}`}>
         <span className="font-display text-xl font-bold tracking-tight">AXIS</span>
-<<<<<<< HEAD
         <nav className="flex items-center gap-6">
           <a href="#sobre" className="text-sm text-[#b4bed1] hover:text-white">Sobre</a>
           <a href="/login" className="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-300">Área do Criador</a>
@@ -27,28 +26,14 @@ export default function Home({ c, edit }: { c: Record<string, string>; edit: boo
 
       {/* HERO — fundo liso com degradê */}
       <section className="axis-hero relative flex min-h-[92svh] items-end px-6 pb-20 pt-40">
-=======
-        <a href="#sobre" className="text-sm text-[#8b97ad] hover:text-white">Sobre</a>
-      </header>
-
-      {/* HERO — grade de projeto (blueprint) como pano de fundo */}
-      <section className="axis-grid relative flex min-h-[92svh] items-end px-6 pb-20 pt-40">
->>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
         <div className="mx-auto w-full max-w-6xl">
           {t("hero.title", "h1", "font-display max-w-4xl text-balance text-[clamp(2.4rem,6.5vw,5.5rem)] font-semibold leading-[1.02] tracking-tight")}
           {t("hero.sub", "p", "mt-8 max-w-xl text-lg leading-relaxed text-[#8b97ad]")}
           <div className="mt-10 flex flex-wrap gap-3">
-<<<<<<< HEAD
             <a href={wa("Olá, Israel! Quero iniciar um projeto com a AXIS.")} target="_blank" rel="noopener" className={`${btn} bg-white text-slate-900 hover:bg-slate-200`}>
               {t("hero.cta1", "span")}
             </a>
             <a href="#sobre" className={`${btn} bg-slate-200 text-slate-900 hover:bg-white`}>
-=======
-            <a href={wa("Olá, Israel! Quero iniciar um projeto com a AXIS.")} target="_blank" rel="noopener" className={`${btn} bg-white text-slate-900 hover:bg-sky-200`}>
-              {t("hero.cta1", "span")}
-            </a>
-            <a href="#sobre" className={`${btn} border border-white/20 hover:border-white/60`}>
->>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
               {t("hero.cta2", "span")}
             </a>
           </div>
@@ -58,7 +43,7 @@ export default function Home({ c, edit }: { c: Record<string, string>; edit: boo
       {/* SOBRE O CEO */}
       <section id="sobre" className="px-6 py-28">
         <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-[minmax(0,320px)_1fr]">
-          <Img k="img.ceo" src={c["img.ceo"]} edit={edit} alt="Israel Dias, CEO da AXIS" className="aspect-[4/5] w-full rounded-sm" />
+          <Img k="img.ceo" src={c["img.ceo"]} edit={edit} alt="Israel Dias, CEO da AXIS" className="aspect-4/5 w-full rounded-sm" />
           <div>
             {t("ceo.title", "h2", "font-display max-w-2xl text-balance text-4xl font-semibold leading-tight tracking-tight md:text-5xl")}
             <div className="mt-8 max-w-[62ch] space-y-5 text-[17px] leading-[1.75] text-[#b4bed1]">
@@ -70,7 +55,7 @@ export default function Home({ c, edit }: { c: Record<string, string>; edit: boo
         </div>
       </section>
 
-      {/* PILARES — colunas separadas por linhas, sem cards */}
+      {/* PILARES */}
       <section className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
           {t("pillars.title", "h2", "font-display text-3xl font-semibold tracking-tight md:text-4xl")}
@@ -98,11 +83,7 @@ export default function Home({ c, edit }: { c: Record<string, string>; edit: boo
         <div className="mx-auto max-w-6xl">
           {t("final.title", "h2", "font-display max-w-3xl text-balance text-4xl font-semibold tracking-tight md:text-6xl")}
           {t("final.text", "p", "mt-6 max-w-xl text-lg text-[#8b97ad]")}
-<<<<<<< HEAD
           <a href={wa("Olá, Israel! Vim pelo site da AXIS e gostaria de conversar.")} target="_blank" rel="noopener" className={`${btn} mt-10 bg-white text-slate-900 hover:bg-slate-200`}>
-=======
-          <a href={wa("Olá, Israel! Vim pelo site da AXIS e gostaria de conversar.")} target="_blank" rel="noopener" className={`${btn} mt-10 bg-white text-slate-900 hover:bg-sky-200`}>
->>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
             {t("final.cta", "span")}
           </a>
           <p className="mt-24 text-sm text-[#5d6980]">© {new Date().getFullYear()} AXIS — Engineering & Interactive</p>
