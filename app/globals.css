@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui;
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui;
+}
+
+html { scroll-behavior: smooth; background: #0a0f1a; color: #e9eef7; }
+body { font-family: var(--font-figtree), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+/* Fundo liso com degradê */
+.axis-hero {
+  background: linear-gradient(160deg, #1b2a4a 0%, #0f1830 45%, #0a0f1a 100%);
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
