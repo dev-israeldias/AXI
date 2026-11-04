@@ -1,4 +1,4 @@
-import { createServerClient } from "@supabase/ssr";
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { createClient } from "@supabase/supabase-js";
 import { cookies } from "next/headers";
 
@@ -13,15 +13,9 @@ export async function authClient() {
   return createServerClient(url, key, {
     cookies: {
       getAll: () => store.getAll(),
-<<<<<<< HEAD
-      setAll: (list) => {
+      setAll: (list: { name: string; value: string; options: CookieOptions }[]) => {
         try { list.forEach(({ name, value, options }) => store.set(name, value, options)); } catch {}
       },
-=======
-      setAll: (list: { name: string; value: string; options?: any }[]) => {
-  try { list.forEach(({ name, value, options }) => store.set(name, value, options)); } catch {}
-},
->>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
     },
   });
 }
