@@ -13,9 +13,15 @@ export async function authClient() {
   return createServerClient(url, key, {
     cookies: {
       getAll: () => store.getAll(),
+<<<<<<< HEAD
       setAll: (list) => {
         try { list.forEach(({ name, value, options }) => store.set(name, value, options)); } catch {}
       },
+=======
+      setAll: (list: { name: string; value: string; options?: any }[]) => {
+  try { list.forEach(({ name, value, options }) => store.set(name, value, options)); } catch {}
+},
+>>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
     },
   });
 }

@@ -20,7 +20,11 @@ export const DEFAULTS: Record<string, string> = {
   "manifesto.author": "Israel Dias, CEO & Founder",
   "final.title": "Pronto para elevar o patamar da sua presença digital?",
   "final.text": "Vamos conversar sobre como a AXIS pode desenhar a solução ideal para os seus objetivos de negócio.",
+<<<<<<< HEAD
   "final.cta": "Entre em contato com a nossa equipe",
+=======
+  "final.cta": "Entrar em Contato com Israel Dias",
+>>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
   "img.ceo": "",
 };
 

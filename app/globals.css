@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+<<<<<<< HEAD
   --font-display: var(--font-bricolage), ui-sans-serif, system-ui;
   --font-sans: var(--font-figtree), ui-sans-serif, system-ui;
 }
@@ -12,5 +13,23 @@ body { font-family: var(--font-figtree), system-ui, sans-serif; -webkit-font-smo
 .axis-hero {
   background: linear-gradient(160deg, #1b2a4a 0%, #0f1830 45%, #0a0f1a 100%);
 }
+=======
+  --font-display: var(--font-display), ui-sans-serif, system-ui;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui;
+}
+
+html { scroll-behavior: smooth; background: #0a0f1a; color: #e9eef7; }
+body { font-family: var(--font-body), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+/* Grade de arquitetura: linhas finas que somem em direção ao conteúdo */
+.axis-grid {
+  background-image:
+    linear-gradient(to right, rgba(143,179,255,.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(143,179,255,.07) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.axis-grid > * { position: relative; }
+>>>>>>> 62dcc60811cd143240752062bf30576dd2c340fc
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
